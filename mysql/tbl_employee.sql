@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 26, 2020 at 08:04 AM
--- Server version: 10.3.23-MariaDB
+-- Generation Time: Aug 04, 2020 at 05:56 AM
+-- Server version: 10.3.23-MariaDB-cll-lve
 -- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u8799410_hris`
+-- Database: `codeigni_belajar`
 --
 
 -- --------------------------------------------------------
@@ -75,7 +75,7 @@ CREATE TABLE `tbl_employee` (
 --
 
 INSERT INTO `tbl_employee` (`emp_id`, `prev_suff`, `emp_name`, `rear_suff`, `join_date`, `gender`, `blood_group`, `religion`, `p_of_birth`, `d_of_birth`, `mother_name`, `father_name`, `id_kk`, `id_card`, `address`, `desa_id`, `kec_id`, `kab_id`, `prov_id`, `kode_pos`, `education`, `majoring`, `marital`, `num_of_child`, `phone_1`, `phone_2`, `email`, `resign`, `resign_date`, `resign_note`, `locked`, `photolink`, `division`, `position`, `sch_id`, `entry_by`, `entry_time`, `update_by`, `update_time`) VALUES
-('1000001', 'Ir. H.', 'TESTER', 'S.E.', '2000-01-01', 'P', 'A', 'Islam', 'Cilacap', '1972-05-20', '', '', '', '', 'Jl. Gandaria Barat No 77', '', '32.01.07', '32.01', '32', '', 'S1', '', 'K', 3, '081288765', '', 'priyadiwijaya123@gmail.com ', 0, '0000-00-00', '', 0, 'user_1000001_305101186.png', 'Produksi', 'HR Staff', 'NS', 'demo_1', '2020-05-16 17:26:58', '', '0000-00-00 00:00:00');
+('1', NULL, 'Arjuna', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Perumahan Metland Transyogi', NULL, NULL, NULL, NULL, NULL, 'SD Tidak Tamat', NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, 0, 'rambo.jpg', NULL, NULL, 'NS', NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -85,18 +85,7 @@ INSERT INTO `tbl_employee` (`emp_id`, `prev_suff`, `emp_name`, `rear_suff`, `joi
 -- Indexes for table `tbl_employee`
 --
 ALTER TABLE `tbl_employee`
-  ADD PRIMARY KEY (`emp_id`),
-  ADD KEY `education` (`education`);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `tbl_employee`
---
-ALTER TABLE `tbl_employee`
-  ADD CONSTRAINT `tbl_employee_ibfk_1` FOREIGN KEY (`education`) REFERENCES `tb_r_education` (`education`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD PRIMARY KEY (`emp_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
